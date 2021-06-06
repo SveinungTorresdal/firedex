@@ -1,13 +1,13 @@
-// eslint-disable-next-line camelcase, no-undef
-__webpack_nonce__ = window.__webpack_nonce__ = window.btoa(Math.random().toString(36).substr(7));
-
-import Vue from 'vue';
-import { router } from './plugins/router';
-import vuetify from './plugins/vuetify';
-import App from './App.vue';
+import Vue from 'vue'
+import { router } from './plugins/router'
+import vuetify from './plugins/vuetify'
+import App from './App.vue'
 
 // Importing SCSS file.
-import './style/main.scss';
+import './style/main.scss'
+
+// https://www.gettyimages.no/detail/photo/fire-flam-royalty-free-image/981575442
+// window.themeImg = './src/img/gettyimages-981575442-2048x2048.jpg';
 
 new Vue({
     el: '#vue',

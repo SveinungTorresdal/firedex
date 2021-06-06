@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require('path')
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const base = {
     entry: './src/main.js',
@@ -56,7 +56,7 @@ const base = {
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
             title: '🔥DEX',
-            //favicon: './src/img/favicon.png',
+            // favicon: './src/img/favicon.png',
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body',
@@ -75,11 +75,11 @@ const base = {
         filename: 'main.js',
         publicPath: '/'
     }
-};
+}
 
 const development = {
     ...base,
     mode: 'development'
-};
+}
 
-module.exports = [development];
+module.exports = [development]

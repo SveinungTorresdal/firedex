@@ -1,7 +1,7 @@
-import Router from 'vue-router';
-import Vue from 'vue';
+import Router from 'vue-router'
+import Vue from 'vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
 const routes = [
     {
@@ -9,7 +9,7 @@ const routes = [
         name: 'Home',
         component: () => import('../views/Home.vue')
     }
-];
+]
 
 const router = new Router({
     mode: 'history',
@@ -19,8 +19,8 @@ const router = new Router({
         return {
             x: 0,
             y: 0
-        };
+        }
     }
-});
+})
 
-export { routes, router };
+export { routes, router }

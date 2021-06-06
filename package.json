@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode=development",
+    "lint": "eslint ./**/*.{js,vue}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sveinung Tørresdal",
@@ -15,15 +16,18 @@
     "vuetify": "^2.5.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
     "deepmerge": "^4.2.2",
-    "eslint": "^7.23.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^7.28.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-vue": "^7.8.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "eslint-plugin-vue-a11y": "^0.0.31",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.0",

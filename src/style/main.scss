@@ -1,0 +1,21 @@
+$positions: static, relative, fixed, absolute, sticky;
+
+@each $position in $positions {
+    .position-#{$position} {
+        position: $position;
+    }
+}
+
+$sides: top, left, right, bottom;
+
+@each $side in $sides {
+    .position-#{$side}-0 {
+        #{$side}: 0;
+    }
+}
+
+@for $i from 0 through 20 {
+    .opacity-#{$i*5} {
+        opacity: $i * 5 / 100;
+    }
+}
