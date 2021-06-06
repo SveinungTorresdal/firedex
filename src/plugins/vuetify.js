@@ -9,7 +9,7 @@ const opts = {
     theme: {
         dark: true,
         themes: {
-            dark: {
+            other: {
                 primary: colors.red.base,
                 secondary: colors.orange.darken4,
                 accent: colors.orange.base

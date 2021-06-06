@@ -55,7 +55,7 @@ const base = {
         }),
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
-            title: '🔥DEX',
+            title: 'FireDEX',
             // favicon: './src/img/favicon.png',
             template: './src/index.html',
             filename: 'index.html',

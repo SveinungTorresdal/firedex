@@ -1,5 +1,6 @@
 <template>
     <v-app>
+        <app-drawer />
         <app-header />
         <v-main>
             <v-container>
@@ -10,12 +11,14 @@
     </v-app>
 </template>
 <script>
+import AppDrawer from './components/AppDrawer.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue'
 
 export default {
     components: {
         AppFooter,
+        AppDrawer,
         AppHeader
     },
     data: () => ({

@@ -21,7 +21,7 @@
                 {{ new Date().getFullYear() }} —
                 <router-link :to="{ name: 'Home' }" class="white--text text-decoration-none">
                     <!-- eslint-disable-next-line vue-a11y/accessible-emoji -->
-                    <strong>🔥DEX</strong>
+                    <strong><span role="img" aria-label="Fire">🔥</span>DEX</strong>
                 </router-link>
             </v-card-text>
         </v-card>

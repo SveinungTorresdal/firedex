@@ -7,7 +7,7 @@ import App from './App.vue'
 import './style/main.scss'
 
 // https://www.gettyimages.no/detail/photo/fire-flam-royalty-free-image/981575442
-// window.themeImg = './src/img/gettyimages-981575442-2048x2048.jpg';
+// window.themeImg = './src/img/gettyimages-981575442-2048x2048.jpg'
 
 new Vue({
     el: '#vue',
