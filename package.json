@@ -1,6 +1,9 @@
 {
   "name": "firedex",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "description": "Vue3 frontend using MangaDex v5 API",
   "main": "index.js",
   "scripts": {
@@ -13,7 +16,8 @@
   "dependencies": {
     "vue": "^2.6.12",
     "vue-router": "^3.5.1",
-    "vuetify": "^2.5.3"
+    "vuetify": "^2.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

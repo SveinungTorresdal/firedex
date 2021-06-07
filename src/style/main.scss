@@ -19,3 +19,22 @@ $sides: top, left, right, bottom;
         opacity: $i * 0.05;
     }
 }
+
+.d-grid {
+    display: grid;
+
+    @for $i from 1 through 10 {
+        &.grid-cols-min-#{$i*50} {
+            grid-template-columns: repeat(auto-fill, minmax($i*50px, 1fr));
+        }
+    }
+
+    @for $i from 0 through 16 {
+        &.grid-col-gap-#{$i} {
+            column-gap: $i*4px;
+        }
+        &.grid-row-gap-#{$i} {
+            row-gap: $i*4px;
+        }
+    }
+}

@@ -7,10 +7,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const base = {
     entry: './src/main.js',
     devServer: {
-        headers: {
-            'Access-Control-Allow-Origin': 'payex.humany.net'
-        },
-        https: true
+        proxy: {
+            '/api': {
+                target: 'https://api.mangadex.org',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': ''
+                }
+            }
+        }
     },
     devtool: 'cheap-module-source-map',
     module: {
