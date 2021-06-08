@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer app permanent expand-on-hover>
+    <v-navigation-drawer app permanent expand-on-hover color="origin">
         <v-list-item>
             <v-list-item-icon>
                 <h1>

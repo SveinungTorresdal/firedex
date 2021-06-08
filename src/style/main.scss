@@ -1,3 +1,5 @@
+@import '~vuetify/src/styles/settings/_variables.scss';
+
 $positions: static, relative, fixed, absolute, sticky;
 
 @each $position in $positions {
@@ -23,18 +25,41 @@ $sides: top, left, right, bottom;
 .d-grid {
     display: grid;
 
-    @for $i from 1 through 10 {
-        &.grid-cols-min-#{$i*50} {
-            grid-template-columns: repeat(auto-fill, minmax($i*50px, 1fr));
-        }
-    }
-
     @for $i from 0 through 16 {
+        &.grid-cols-min-#{$i*25} {
+            grid-template-columns: repeat(auto-fill, minmax($i*25px, 1fr));
+        }
+
+        &.grid-cols-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+        }
+
         &.grid-col-gap-#{$i} {
             column-gap: $i*4px;
         }
+
         &.grid-row-gap-#{$i} {
             row-gap: $i*4px;
+        }
+
+        @each $breakpoint, $width in $grid-breakpoints {
+            @media only screen and (min-width: $width) {
+                &.grid-cols-min-#{$breakpoint}-#{$i*25} {
+                    grid-template-columns: repeat(auto-fill, minmax($i*25px, 1fr));
+                }
+
+                &.grid-cols-#{$breakpoint}-#{$i} {
+                    grid-template-columns: repeat($i, 1fr);
+                }
+
+                &.grid-col-gap-#{$breakpoint}-#{$i} {
+                    column-gap: $i*4px;
+                }
+
+                &.grid-row-gap-#{$breakpoint}-#{$i} {
+                    row-gap: $i*4px;
+                }
+            }
         }
     }
 }

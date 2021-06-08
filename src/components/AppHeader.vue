@@ -16,6 +16,7 @@
                 single-line
                 hide-details
                 class="align-self-center"
+                color="origin"
             >
                 <template #label>
                     Search your favorite manga
